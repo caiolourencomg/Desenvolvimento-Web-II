@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Isto é JavaScript</h2>
+
+    <script>
+        Caio = {
+            nome: "Caio",
+            idade: 30,
+            altura: 1.80,
+            andar: function() {
+                console.Log("Caio esta andando");
+            },
+            lerlivro: function(titulo) {
+                console.log("O Caio esta lendo", titulo)
+            }
+        }
+        let idade = Caio.idade;
+        let nome = Caio.nome;
+
+let confirma = confirm(`
+    Voce tem certeza que quer apagar o arquivo?
+    Essa operação não pode ser feita.`);
+if(confirma = true) {
+    console.log("O botão OK foi clicado.");
+} else {
+    console.log("O botão CANCELAR foi clicado.");
+};
+
+const name = prompt("Olá visitante\nInforme seu nome. ", 'Name');
+if (name !== "Nome" && name !== ""){
+    console.log("Olá", name);
+} else {
+    console.log("Favor preencher o campo");
+}
+
+document.write("<h1>Caio Cesar <br> <i style = 'color:red;'>Mota Taxi</i> </h1>");
+
+    </script>
+</body>
+</html>
