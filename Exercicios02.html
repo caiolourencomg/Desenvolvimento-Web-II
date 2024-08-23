@@ -1,0 +1,38 @@
+/*Gere em páginas HTML as rotinas Javascript conforme o enunciado abaixo:
+
+- Estrutura if, else if e else
+    Classificação de notas
+        Classifique uma nota de um aluno em letras, considerando as seguintes faixas: (A) para notas de 90 a 100, (B) para notas de 80 a 89, (C) para notas de 70 a 79, (D) para notas de 60 a 69 e (F) para notas abaixo de 60.*/
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Classificação de Notas</title>
+    <script>
+        function classificarNota() {
+            var nota = parseFloat(document.getElementById("nota").value);
+            var resultado;
+            if (nota >= 90 && nota <= 100) {
+                resultado = "Nota: A";
+            } else if (nota >= 80 && nota < 90) {
+                resultado = "Nota: B";
+            } else if (nota >= 70 && nota < 80) {
+                resultado = "Nota: C";
+            } else if (nota >= 60 && nota < 70) {
+                resultado = "Nota: D";
+            } else {
+                resultado = "Nota: F";
+            }
+            document.getElementById("resultado").innerText = resultado;
+        }
+    </script>
+</head>
+<body>
+    <h1>Classificação de Notas</h1>
+    <label for="nota">Digite a nota do aluno:</label>
+    <input type="number" id="nota" step="any">
+    <button onclick="classificarNota()">Classificar</button>
+    <p id="resultado"></p>
+</body>
+</html>
